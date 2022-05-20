@@ -1,0 +1,210 @@
+/* Wide screen / desktop design */
+@media  (min-width:720px){
+    /* heading section */
+        .heading {
+            padding: 5rem;
+        }
+         .logo img {
+             width: 100%;
+        }
+        .button button{
+            padding: .5rem 1.8rem;
+            font-size: .9rem;
+        }
+        .heading-text h1{
+             font-size: 3rem;
+        }
+        .heading-text p {
+            padding: 2rem 30%;
+            font-size: 1.2rem;
+        }
+        .heading-text button,
+        .build-community button {
+            padding: 1.5rem 6.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .mockup img {
+            width: 72%;
+        }
+                /* Rating section */
+        
+        .rating {
+            display: flex;
+            justify-content: space-around;
+        }
+        .rating img {
+            width: 3rem;
+        }
+        .rating h2 {
+            font-size: 5.5rem;
+        }
+        .rating p {
+           font-size: 1.5rem;
+        }
+                /* together section */
+        
+        .together {
+            padding: 13rem 10rem 10rem;
+            grid-template-areas: "textarea together";
+            text-align: justify;
+        }
+        .together::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: calc(201% + 1.3px);
+            height: 170px;
+        }
+
+        .together::after {
+            width: calc(200% + 1.3px);
+        }
+        .conversation-textarea h3,
+        .user-textarea h3,
+        .together-textarea h3 {
+            font-size: 2.5rem;
+        }
+        .together-textarea, .user-textarea {
+            grid-area: textarea;
+            padding: 5rem 22% 0 0;
+            font-size: 1rem;
+        }
+        .together-img img, .user-img img {
+            grid-area:
+                together;
+            width: 30rem;
+        }
+                /* users section */
+        .user::before {
+            width: calc(109% + 100px); 
+        }
+
+        .user::after {
+            width: calc(100% + 1.3px);
+        }
+                .user{
+            padding: 12rem 10rem 10rem;
+        grid-template-areas: "textarea together";
+            text-align: justify;
+        }
+        .user-textarea {
+            grid-area: textarea;
+            padding: 0 20% 0 0;
+            font-size: 1rem;
+        }
+                /* conversation section */
+        .conversation {
+            padding: 8rem 10rem 5rem;
+            grid-template-areas: "con-img converse";
+            display: grid;
+            text-align: justify;
+        }
+        .conversation-textarea{
+            grid-area: converse;
+            padding: 5rem 2% 0 22%;
+        }
+        .conversation img {
+            grid-area: con-img;
+            width: 30rem;
+        }
+        /* Build section */
+                .build-community {
+                    padding: 8rem 4rem 0;
+                }
+        .build-community h3 {
+            font-size: 2.5rem;
+        }
+
+                /* footer section */
+        footer {
+            padding: 15rem 5rem 2rem;
+        }
+        footer::before {
+            height: 253px;
+        }
+        .footer {
+            display: grid;
+            grid-template-areas: "logo new"
+                "social .";
+        }
+                /* newsletter input section */
+        .newsletter input {
+            width: 50%;
+            margin-right: 1rem;
+        }
+        .input{
+            display: flex;
+        }
+}
+
+@media (max-width:1200px) and (min-width:721px){
+    /* heading section */
+    
+    .heading-text h1 {
+            font-size: 3rem;
+            padding: 0 10%;
+        }
+    .heading-text p {
+        padding: 2rem 20%;
+    }
+          /* Rating section */
+    
+    .rating h2 {
+        font-size: 4rem;
+    }
+
+    .rating p {
+        font-size: 1.1rem;
+    }
+                    /* together section */
+        
+        .together {
+            padding: 10rem 5rem 10rem ;
+        }
+        .conversation-textarea h3,
+        .user-textarea h3,
+        .together-textarea h3 {
+            font-size: 1.8rem;
+        }
+        .together-textarea, .user-textarea {
+        padding: 2rem 10% 0 0;
+        font-size: .9rem;
+    }
+    .together-img img, .conversation img,
+    .user-img img {
+        width: 20rem;
+    }
+    /* conversation section */
+    .conversation {
+        padding: 8rem 5rem 5rem;
+    }
+
+    .conversation-textarea {
+        padding: 1rem 0 0 20%;
+    }
+        /* users section */
+    .user {
+        padding: 12rem 5rem 10rem;
+    }
+
+    .user-textarea {
+        padding: 0 10% 0 0;
+        font-size: 1rem;
+    }
+        /* Build section */
+    
+        .build-community {
+            padding: 8rem 4rem 0;
+        }
+        /* newsletter input section */
+        .newsletter input {
+            width: 50%;
+            margin-right: 1rem;
+        }
+        /* newsleter button */
+        .footer-button button {
+        padding: .9rem 2rem;
+
+        }
+}
