@@ -77,7 +77,14 @@
         }
                 /* users section */
         .user::before {
-            width: calc(109% + 100px); 
+            content: "";
+    position: absolute;
+    bottom: 0;
+    width: calc(209% + 650px);
+    height: 200px;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background: url("images/Negative1.svg");
         }
 
         .user::after {
